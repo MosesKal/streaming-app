@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faVideo,
+  faBell,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="side-menu"></div>
+      <div className="main-section">
+        <div className="search-bar">
+          <div className="container-input-search">
+            <input
+              type="search"
+              className="search"
+              placeholder="Rechercher..."
+            />
+            {/* <button type="submit" className="btn-search"><FontAwesomeIcon icon={faMagnifyingGlass} /></button> */}
+          </div>
+          <div className="logo">
+            <FontAwesomeIcon icon={faVideo} className="icons" />
+            <FontAwesomeIcon icon={faBell} className="icons" />
+            <span className="avatar">
+              <span className="text">m</span>
+            </span>
+          </div>
+        </div>
+        <nav className="navigation-container">
+          <ul className="navigation">
+            <li className="navigation-item">Toutes cathegorie</li>
+            <li className="navigation-item">Drame</li>
+            <li className="navigation-item">Comédie</li>
+            <li className="navigation-item">Policier</li>
+            <li className="navigation-item">Science</li>
+            <li className="navigation-item">Fiction jeunesse</li>
+            <li className="navigation-item">Histoire</li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 }
