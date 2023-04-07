@@ -3,7 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faVideo,
   faBell,
-  faList
+  faList,
+  faHouseChimney,
+  faClockRotateLeft,
+  faClapperboard,
+  faFilm,
+  faClock,
 } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
@@ -11,8 +16,32 @@ function App() {
     <div className="container">
       <div className="side-menu">
         <div className="container-toggle">
-          <div className="logo-toggle"><FontAwesomeIcon icon={faList} /></div>
+          <div className="logo-toggle">
+            <FontAwesomeIcon icon={faList} />
+          </div>
           <div className="app-name">StreamingApp</div>
+        </div>
+        <div className="list-side-menu">
+          <ul>
+            <li>
+              <FontAwesomeIcon icon={faHouseChimney} /> <span>Home</span>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faClapperboard} /> <span>Home</span>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faClockRotateLeft} />
+              <span>Home</span>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faFilm} />
+              <span>Home</span>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faClock} />
+              <span>Home</span>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="main-section">
