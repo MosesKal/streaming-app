@@ -3,13 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faVideo,
   faBell,
-  faMagnifyingGlass,
+  faList
 } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <div className="container">
-      <div className="side-menu"></div>
+      <div className="side-menu">
+        <div className="container-toggle">
+          <div className="logo-toggle"><FontAwesomeIcon icon={faList} /></div>
+          <div className="app-name">StreamingApp</div>
+        </div>
+      </div>
       <div className="main-section">
         <div className="search-bar">
           <div className="container-input-search">

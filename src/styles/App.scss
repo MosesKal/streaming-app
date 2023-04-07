@@ -23,7 +23,17 @@ code {
 
   .side-menu {
     width: 20%;
+    font-size: 1.2rem;
     background: linear-gradient(168.44deg, #2e335a 1.62%, #1c1b33 95.72%);
+    .container-toggle{
+      display: flex;
+      margin-top: 90px;
+      padding-left: 20px;
+
+      .app-name{
+        padding-left: 15px;
+      }
+    }
   }
 
   .main-section {
@@ -111,6 +121,7 @@ code {
         .navigation-item{
           padding: 0 15px;
           color: rgba(235, 235, 245, 0.6);
+          
         }
       }
     }
